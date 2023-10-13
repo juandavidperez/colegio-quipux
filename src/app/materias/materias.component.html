@@ -48,14 +48,38 @@
     </aside>
     <main class="main-container">
       <div class="text-container">
-        <h1 class="text-title">Administracion de materias</h1>
+        <h1 class="text-title">Administración de materias</h1>
         <button class="btn">
           <img src="assets/add.png" alt="add" class="btn-icon" />
-          Nuevo Registro
+          <span class="btn-text">Nuevo Registro</span>
         </button>
       </div>
-      <div></div>
-      <div></div>
+      <div class="rectangule">
+        <div class="row">
+          <div class="select-group">
+            <p>Grado</p>
+            <select class="multiSelect"></select>
+          </div>
+          <div class="select-group">
+            <p>Grupo</p>
+            <select class="multiSelect"></select>
+          </div>
+          <div class="select-group">
+            <p>Materia</p>
+            <select class="select" placeholder="Seleccionar"></select>
+          </div>
+          <div class="select-group">
+            <p>Profesor</p>
+            <select class="select" placeholder="Seleccionar"></select>
+          </div>
+          <button class="search-btn">Buscar</button>
+          <a class="link"><span class="link-text">Limpiar filtros</span></a>
+        </div>
+      </div>
+      <div class="table-container">
+        <h3 class="subtitle">Resultados</h3>
+        <div class="table"></div>
+      </div>
     </main>
   </div>
 </body>
