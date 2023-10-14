@@ -58,22 +58,42 @@
         <div class="row">
           <div class="select-group">
             <p>Grado</p>
-            <select class="multiSelect"></select>
+            <select class="multiSelect">
+              <option value="" disabled selected hidden></option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+            </select>
           </div>
           <div class="select-group">
             <p>Grupo</p>
-            <select class="multiSelect"></select>
+            <select class="multiSelect">
+              <option value="" disabled selected hidden></option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+            </select>
           </div>
           <div class="select-group">
             <p>Materia</p>
             <select class="select">
               <option value="" disabled selected hidden>Seleccionar</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
             </select>
           </div>
           <div class="select-group">
             <p>Profesor</p>
             <select class="select">
               <option value="" disabled selected hidden>Seleccionar</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
             </select>
           </div>
           <button class="search-btn">Buscar</button>
@@ -98,7 +118,12 @@
             <td>
               <div class="table-icn-container">
                 <button class="table-btn">
-                  <img src="assets/ic-show.svg" alt="edit" class="table-icon" />
+                  <img
+                    src="assets/ic-show.svg"
+                    alt="edit"
+                    class="table-icon"
+                    (click)="openMateria()"
+                  />
                 </button>
                 <button class="table-btn">
                   <img
